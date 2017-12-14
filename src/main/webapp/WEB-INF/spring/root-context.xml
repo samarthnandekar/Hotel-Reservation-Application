@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+		<bean id="hotelFormValidator" class="com.myhotelapp.validator.HotelFormValidator"></bean>
+		
+		<bean id="roomformValidation" class="com.myhotelapp.validator.RoomformValidation"></bean>
+		
+		<bean id="hotelOwnerFormValidator" class="com.myhotelapp.validator.HotelOwnerFormValidator"></bean>
+		
+		<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"></bean> 
+		
+		<!-- Dao objects -->
+		<bean id="userAddDao" class="com.myhotelapp.dao.UserAddDao"></bean>
+		<bean id="roomBookingDao" class="com.myhotelapp.dao.RoomBookingDao"></bean>
+		<bean id="searchHotelDao" class="com.myhotelapp.dao.SearchHotelDao"></bean>
+		<bean id="addHotelDao" class="com.myhotelapp.dao.AddHotelDao"></bean>
+		
+		<bean id="hotelsearchInterceptor" class="com.myhotelapp.Interceptor.HotelSearchInterseptor"></bean>	
+</beans>

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: WebToolsProjectFinal
+Bundle-SymbolicName: WebToolsProjectFinal
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: WebToolsProjectFinal.jar,
+ samar/Desktop/hibernate-distribution-3.6.2.Final/hibernate3.jar
+Export-Package: com.myhotelapp.controller,
+ com.myhotelapp.dao,
+ com.myhotelapp.exception,
+ com.myhotelapp.pojo
+Import-Package: com.myhotelapp.spring.pojo,
+ com.yusuf.spring.pojo,
+ javax.servlet.http;version="3.1.0"
